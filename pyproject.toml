@@ -1,0 +1,35 @@
+[tool.poetry]
+name = "hotel_manager"
+version = "0.1.0"
+description = ""
+authors = ["BRANYA <tbd2504@gmail.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.10"
+peewee = "^3.17.0"
+customtkinter = "^5.2.1"
+
+
+[tool.poetry.group.dev.dependencies]
+pre-commit = "^3.5.0"
+mypy = "^1.7.1"
+isort = "^5.12.0"
+ruff = "^0.1.7"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+
+[tool.ruff]
+line-length = 120
+
+[tool.ruff.format]
+quote-style = "single"
+
+
+[tool.isort]
+include_trailing_comma = true
+line_length = 120
+multi_line_output = 3
